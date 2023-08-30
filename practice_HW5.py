@@ -6,10 +6,8 @@ num3 = int(input())
 num1 > 0 and num2 > 0 and num3 > 0 and print('Нет нулевых значений!!!')
 
 #Вывести первое ненулевое значение. Если введены все нули - вывести "Введены все нули!" (цикл не использовать) без if - использовать лень
-num1 > 0 and (num2 == 0 or num2 > 0) and (num3 == 0 or num2 > 0) and print('Первое не нулевое значение', num1) \
-or num1 == 0 and num2 > 0 and (num3 == 0 or num3 > 0) and print('Первое не нулевое значение', num2) \
-or num1 == 0 and num2 == 0 and num3 > 0 and print('Первое не нулевое значение', num3) \
-or num1 == 0 and num2 == 0 and num3 == 0 and print('Введены все нули!')
+
+print(num1 or num2 or num3 or print('Введены все нули!'))
 
 #Если первое значение больше чем сумма второго и третьего вывести a - b - c
 if num1 > num2 + num3:
