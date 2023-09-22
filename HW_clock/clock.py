@@ -1,6 +1,6 @@
 from datetime import datetime
 import itertools
-import numbers as numbers
+import numbers_1 as numbers_1
 from time import sleep
 import os
 import time
@@ -16,7 +16,7 @@ def get_numerals(result, numerals):
     for symbols in result:
         for numerals_number, i in enumerate(numerals):
             if symbols == i:
-                new_numerals.append(numbers.used_numerals[numerals_number])
+                new_numerals.append(numbers_1.used_numerals[numerals_number])
             
     new_numerals_0 = []
     new_numerals_1 = []
